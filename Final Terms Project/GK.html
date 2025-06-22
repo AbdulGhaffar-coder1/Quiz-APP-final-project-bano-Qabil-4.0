@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Knowledge Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="GK.css">
+</head>
+
+<body>
+
+    <div class="modal" id="nameModal">
+        <div class="modal-content">
+            <h2>Welcome!</h2>
+            <p>Enter your name to begin</p>
+            <input type="text" id="nameInput" placeholder="Your name..." />
+            <button onclick="startQuiz()">Start</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>General Knowledge Quiz</h1>
+        <div class="username" id="username"></div>
+
+        <div class="question-box active" id="q1">
+            <div class="timer" id="timer1">10</div>
+            <h2>1. What is the capital of Canada?</h2>
+            <div class="options">
+                <label><input type="radio" name="q1" value="1"> Ottawa</label>
+                <label><input type="radio" name="q1" value="0"> Toronto</label>
+                <label><input type="radio" name="q1" value="0"> Montreal</label>
+                <label><input type="radio" name="q1" value="0"> Vancouver</label>
+            </div>
+            <button onclick="nextQuestion(1)">Next</button>
+        </div>
+
+        <div class="question-box" id="q2">
+            <div class="timer" id="timer2">10</div>
+            <h2>2. Which planet is known as the Red Planet?</h2>
+            <div class="options">
+                <label><input type="radio" name="q2" value="0"> Jupiter</label>
+                <label><input type="radio" name="q2" value="1"> Mars</label>
+                <label><input type="radio" name="q2" value="0"> Saturn</label>
+                <label><input type="radio" name="q2" value="0"> Venus</label>
+            </div>
+            <button onclick="nextQuestion(2)">Next</button>
+        </div>
+
+        <div class="question-box" id="q3">
+            <div class="timer" id="timer3">10</div>
+            <h2>3. How many continents are there in the world?</h2>
+            <div class="options">
+                <label><input type="radio" name="q3" value="1"> 7</label>
+                <label><input type="radio" name="q3" value="0"> 6</label>
+                <label><input type="radio" name="q3" value="0"> 5</label>
+                <label><input type="radio" name="q3" value="0"> 8</label>
+            </div>
+            <button onclick="nextQuestion(3)">Next</button>
+        </div>
+
+        <div class="question-box" id="q4">
+            <div class="timer" id="timer4">10</div>
+            <h2>4. Which ocean is the largest?</h2>
+            <div class="options">
+                <label><input type="radio" name="q4" value="1"> Pacific Ocean</label>
+                <label><input type="radio" name="q4" value="0"> Atlantic Ocean</label>
+                <label><input type="radio" name="q4" value="0"> Indian Ocean</label>
+                <label><input type="radio" name="q4" value="0"> Arctic Ocean</label>
+            </div>
+            <button onclick="nextQuestion(4)">Next</button>
+        </div>
+
+        <div class="question-box" id="q5">
+            <div class="timer" id="timer5">10</div>
+            <h2>5. What gas do plants absorb from the atmosphere?</h2>
+            <div class="options">
+                <label><input type="radio" name="q5" value="1"> Carbon Dioxide</label>
+                <label><input type="radio" name="q5" value="0"> Oxygen</label>
+                <label><input type="radio" name="q5" value="0"> Nitrogen</label>
+                <label><input type="radio" name="q5" value="0"> Hydrogen</label>
+            </div>
+            <button onclick="showResult()">Finish</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js">
+    </script>
+
+</body>
+
+</html>
