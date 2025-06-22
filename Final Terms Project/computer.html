@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Science Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="computer.css">
+
+</head>
+
+<body>
+
+    <div class="modal" id="nameModal">
+        <div class="modal-content">
+            <h2>Welcome!</h2>
+            <p>Enter your name to start</p>
+            <input type="text" id="nameInput" placeholder="Your name..." />
+            <button onclick="startQuiz()">Start</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Computer Science Quiz</h1>
+        <div class="username" id="username"></div>
+
+        <div class="question-box active" id="q1">
+            <div class="timer" id="timer1">10</div>
+            <h2>1. What does CPU stand for?</h2>
+            <div class="options">
+                <label><input type="radio" name="q1" value="0"> Central Program Unit</label>
+                <label><input type="radio" name="q1" value="1"> Central Processing Unit</label>
+                <label><input type="radio" name="q1" value="0"> Computer Personal Unit</label>
+                <label><input type="radio" name="q1" value="0"> Central Process Utility</label>
+            </div>
+            <button onclick="nextQuestion(1)">Next</button>
+        </div>
+
+        <div class="question-box" id="q2">
+            <div class="timer" id="timer2">10</div>
+            <h2>2. What is the brain of the computer?</h2>
+            <div class="options">
+                <label><input type="radio" name="q2" value="0"> RAM</label>
+                <label><input type="radio" name="q2" value="0"> ROM</label>
+                <label><input type="radio" name="q2" value="1"> CPU</label>
+                <label><input type="radio" name="q2" value="0"> HDD</label>
+            </div>
+            <button onclick="nextQuestion(2)">Next</button>
+        </div>
+
+        <div class="question-box" id="q3">
+            <div class="timer" id="timer3">10</div>
+            <h2>3. Which language is used for web apps?</h2>
+            <div class="options">
+                <label><input type="radio" name="q3" value="0"> Python</label>
+                <label><input type="radio" name="q3" value="1"> JavaScript</label>
+                <label><input type="radio" name="q3" value="0"> C++</label>
+                <label><input type="radio" name="q3" value="0"> Java</label>
+            </div>
+            <button onclick="nextQuestion(3)">Next</button>
+        </div>
+
+        <div class="question-box" id="q4">
+            <div class="timer" id="timer4">10</div>
+            <h2>4. What does HTML stand for?</h2>
+            <div class="options">
+                <label><input type="radio" name="q4" value="1"> HyperText Markup Language</label>
+                <label><input type="radio" name="q4" value="0"> HighText Marking Language</label>
+                <label><input type="radio" name="q4" value="0"> HyperText Making Line</label>
+                <label><input type="radio" name="q4" value="0"> HighText Multi Language</label>
+            </div>
+            <button onclick="nextQuestion(4)">Next</button>
+        </div>
+
+        <div class="question-box" id="q5">
+            <div class="timer" id="timer5">10</div>
+            <h2>5. Which device is used to input data?</h2>
+            <div class="options">
+                <label><input type="radio" name="q5" value="1"> Keyboard</label>
+                <label><input type="radio" name="q5" value="0"> Monitor</label>
+                <label><input type="radio" name="q5" value="0"> Printer</label>
+                <label><input type="radio" name="q5" value="0"> Speaker</label>
+            </div>
+            <button onclick="showResult()">Finish</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js">
+    </script>
+
+</body>
+
+</html>
